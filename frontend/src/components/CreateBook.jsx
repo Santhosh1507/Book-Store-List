@@ -22,7 +22,7 @@ const CreateBook = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8082/api/books", book)
+      .post("https://book-store-db.vercel.app/api/books", book)
       .then((res) => {
         setBook({
           title: "",
