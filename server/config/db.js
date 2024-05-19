@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
-const db =
-  "mongodb+srv://firefriends15072002:0wMesXmcwospetkC@cluster0.jtdjhee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-/* Replace <password> with your database password */
+// const dotenv = require("dotenv");
+// /* Replace <password> with your database password */
+// dotenv.config(); 
 
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db);
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("MongoDB is Connected...");
   } catch (err) {
     console.error(err.message);

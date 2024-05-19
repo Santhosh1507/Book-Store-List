@@ -2,10 +2,10 @@ const express = require("express");
 const connectDB = require("./config/db");
 const routes = require("./routes/api/books");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
-
+dotenv.config(); 
 const app = express();
-
 // use the cors middleware with the
 // origin and credentials options
 app.use(cors({ origin: true, credentials: true }));
