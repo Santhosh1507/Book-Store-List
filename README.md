@@ -34,11 +34,11 @@ Install my-project with npm
 ```
 8. To change the database
 ```bash
-  file: server/config/db.js
+  create the file .env
 
-  const db =
-  "mongodb+srv://<password>@cluster0.yyaxbz3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-/* Replace <password> with your database password */
+    PORT= 7000
+    MONGO_URI=mongodb+srv://<username>:<password>@cluster0.jtdjhee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  /* Replace <username> and <password> with your database username and password */
 ```
 ![alt text](<Images/Screenshot 2024-05-19 121205.png>)
 
