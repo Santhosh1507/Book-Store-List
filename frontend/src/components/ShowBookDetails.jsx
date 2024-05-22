@@ -72,9 +72,9 @@ function ShowBookDetails(props) {
 
   return (
     <div className='ShowBookDetails'>
-      <div className='container'>
+      <div className='container '>
         <div className='row'>
-          <div className='col-md-10 m-auto'>
+          <div className='col-md-10 m-auto pb-3'>
             <br /> <br />
             <Link to='/' className='btn btn-outline-warning float-left'>
               Show Book List
@@ -87,24 +87,26 @@ function ShowBookDetails(props) {
             <hr /> <br />
           </div>
           <div className='col-md-10 m-auto'>{BookItem}</div>
-          <div className='col-md-6 m-auto'>
-            <button
-              type='button'
-              className='btn btn-outline-danger btn-lg btn-block'
-              onClick={() => {
-                onDeleteClick(book._id);
-              }}
-            >
-              Delete Book
-            </button>
-          </div>
-          <div className='col-md-6 m-auto'>
-            <Link
-              to={`/edit-book/${book._id}`}
-              className='btn btn-outline-info btn-lg btn-block'
-            >
-              Edit Book
-            </Link>
+          <div className=' d-flex pb-5'>
+            <div className='col-md-6 m-auto col-sm-2'>
+              <button
+                type='button'
+                className='btn btn-outline-danger btn-lg btn-block '
+                onClick={() => {
+                  onDeleteClick(book._id);
+                }}
+              >
+                Delete Book
+              </button>
+            </div>
+            <div className='col-md-6 m-auto col-sm-2 '>
+              <Link
+                to={`/edit-book/${book._id}`}
+                className='btn btn-outline-info btn-lg btn-block'
+              >
+                Edit Book
+              </Link>
+            </div>
           </div>
         </div>
       </div>

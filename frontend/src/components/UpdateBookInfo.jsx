@@ -64,7 +64,7 @@ function UpdateBookInfo(props) {
     <div className='UpdateBookInfo'>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-8 m-auto'>
+          <div className='col-md-8 m-auto pb-4'>
             <br />
             <Link to='/' className='btn btn-outline-warning float-left'>
               Show BooK List
@@ -76,7 +76,7 @@ function UpdateBookInfo(props) {
           </div>
         </div>
 
-        <div className='col-md-8 m-auto'>
+        <div className='col-md-8 m-auto pb-5'>
           <form noValidate onSubmit={onSubmit}>
             <div className='form-group'>
               <label htmlFor='title'>Title</label>
