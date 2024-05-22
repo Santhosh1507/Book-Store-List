@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:7000/api/books/${id}`)
+      .get(`https://book-store-web-db.onrender.com/api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`https://book-store-ygmm.onrender.com/api/books/${id}`, data)
+      .put(`https://book-store-web-db.onrender.com/api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })

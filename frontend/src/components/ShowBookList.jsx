@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get('https://book-store-ygmm.onrender.com/api/books')
+      .get('https://book-store-web-db.onrender.com/api/books')
       .then((res) => {
         setBooks(res.data);
       })

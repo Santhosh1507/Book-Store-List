@@ -2,6 +2,14 @@
 
 I'm craete my book-store-list
 
+## 🔗 Demo
+
+frontend-url: https://book-store-list.vercel.app/
+
+backend-url: https://book-store-web-db.onrender.com/
+
+## 🛠 Installation
+
 Install my-project with npm
 
 1. To install
