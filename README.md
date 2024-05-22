@@ -30,7 +30,7 @@ Install my-project with npm
 ```
 5. To install
 ```bash
-  cd..
+  open new terminal
 ```
 6. To install
 ```bash
