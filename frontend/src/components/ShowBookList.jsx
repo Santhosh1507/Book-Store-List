@@ -45,7 +45,7 @@ function ShowBookList() {
           </div>
         </div>
 
-        <div className='list d-flex flex-wrap '>{bookList}</div>
+        <div className='list  '>{bookList}</div>
       </div>
     </div>
   );
