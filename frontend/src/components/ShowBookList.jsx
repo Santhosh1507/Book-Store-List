@@ -32,7 +32,7 @@ function ShowBookList() {
             <h2 className='display-4 text-center'>Books List</h2>
           </div>
 
-          <div className='col-md-11'>
+          <div className='col-md-11 '>
             <Link
               to='/create-book'
               className='btn btn-outline-warning float-right'
@@ -45,7 +45,7 @@ function ShowBookList() {
           </div>
         </div>
 
-        <div className='list'>{bookList}</div>
+        <div className='list d-flex flex-wrap '>{bookList}</div>
       </div>
     </div>
   );
