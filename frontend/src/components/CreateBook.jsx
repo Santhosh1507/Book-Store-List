@@ -22,7 +22,7 @@ const CreateBook = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8082/api/books", book)
+      .post("https://book-store-ygmm.onrender.com/api/books", book)
       .then((res) => {
         setBook({
           title: "",
