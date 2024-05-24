@@ -6,10 +6,12 @@ import BookCard from './BookCard';
 
 function ShowBookList() {
   const [books, setBooks] = useState([]);
+  const api = import.meta.env.VITE_SOME_API_KEY;
+
 
   useEffect(() => {
     axios
-      .get('https://book-store-web-db.onrender.com/api/books')
+      .get(api)
       .then((res) => {
         setBooks(res.data);
       })

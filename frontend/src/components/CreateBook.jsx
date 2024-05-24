@@ -19,10 +19,12 @@ const CreateBook = (props) => {
     setBook({ ...book, [e.target.name]: e.target.value });
   };
 
+  const api = import.meta.env.VITE_SOME_API_KEY;
+
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://book-store-web-db.onrender.com/api/books", book)
+      .post(api, book)
       .then((res) => {
         setBook({
           title: "",

@@ -8,10 +8,10 @@ function ShowBookDetails(props) {
 
   const { id } = useParams();
   const navigate = useNavigate();
-
+  const api_id = import.meta.env.VITE_SOME_API_KEY+`/${id}`;
   useEffect(() => {
     axios
-      .get(`https://book-store-web-db.onrender.com/api/books/${id}`)
+      .get(api_id)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://book-store-web-db.onrender.com/api/books/${id}`)
+      .delete(api_id)
       .then((res) => {
         navigate('/');
       })

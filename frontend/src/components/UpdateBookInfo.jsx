@@ -15,10 +15,11 @@ function UpdateBookInfo(props) {
 
   const { id } = useParams();
   const navigate = useNavigate();
+  const api_id = import.meta.env.VITE_SOME_API_KEY+`/${id}`;
 
   useEffect(() => {
     axios
-      .get(`https://book-store-web-db.onrender.com/api/books/${id}`)
+      .get(api_id)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +52,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`https://book-store-web-db.onrender.com/api/books/${id}`, data)
+      .put(api_id, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })
